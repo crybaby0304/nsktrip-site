@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NSKTrip — Туры по Новосибирску</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      color: #222;
+      background: #f9f9f9 url('https://vsturizm.ru/tour/img/tild3665-3037-4664-b536-636363343930_1661444846_1-kartink.png') no-repeat center top;
+      background-size: cover;
+    }
+    header, footer {
+      text-align: center;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.9);
+    }
+    h1, h2 {
+      margin: 0.5em 0;
+    }
+    section {
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.9);
+      margin: 2rem auto;
+      max-width: 800px;
+      border-radius: 16px;
+    }
+    .tour {
+      margin-bottom: 2rem;
+    }
+    .gallery img {
+      width: 30%;
+      margin: 1%;
+      border-radius: 8px;
+    }
+    ul {
+      padding-left: 1em;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea, button {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #007acc;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+    @media (max-width: 600px) {
+      .gallery img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NSKTrip</h1>
+    <p>Авторские туры по Новосибирску и Сибири</p>
+  </header>
+
+  <section>
+    <h2>О нас</h2>
+    <p>«NSKTrip» — турагентство, которое открывает для вас Новосибирск с неожиданной стороны. Мы предлагаем авторские туры с акцентом на историю, науку, современную культуру и природу Сибири. Наши маршруты – это не просто экскурсии, а погружение в атмосферу самого динамичного города Сибири.</p>
+  </section>
+
+  <section>
+    <h2>Услуги</h2>
+
+    <div class="tour">
+      <h3>Научный Новосибирск: от Академгородка до космоса</h3>
+      <ul>
+        <li><strong>Формат:</strong> групповая или индивидуальная экскурсия (4–6 часов)</li>
+        <li><strong>Что включено:</strong> Академгородок, Планетарий, Музей СО РАН</li>
+        <li><strong>Для кого:</strong> любители технологий, семьи, студенты</li>
+        <li><strong>Цена:</strong> от 2 500 ₽/чел. или 8 000–12 000 ₽ за группу</li>
+      </ul>
+      <img src="https://status-media.com/wp-content/uploads/2018/12/status-media_Nauchnyj-tsentr-2.jpg" alt="Научный тур" width="100%" style="border-radius: 12px;">
+    </div>
+
+    <div class="tour">
+      <h3>Контрасты Новосибирска: от купеческих домов до стрит-арта</h3>
+      <ul>
+        <li><strong>Формат:</strong> пешеходный тур (3–4 часа)</li>
+        <li><strong>Что включено:</strong> центр, заброшенные места, арт-пространства</li>
+        <li><strong>Для кого:</strong> урбанисты, молодёжь, фотографы</li>
+        <li><strong>Цена:</strong> от 1 500 ₽/чел. или 5 000–7 000 ₽ за группу</li>
+      </ul>
+      <img src="https://status-media.com/wp-content/uploads/2018/12/status-media_Nauchnyj-tsentr-2.jpg" alt="Городской тур" width="100%" style="border-radius: 12px;">
+    </div>
+
+    <div class="tour">
+      <h3>Сибирская природа: Обское море и сосновый бор</h3>
+      <ul>
+        <li><strong>Формат:</strong> выездной тур (5–7 часов)</li>
+        <li><strong>Что включено:</strong> прогулка/пикник, бор, дегустация</li>
+        <li><strong>Для кого:</strong> любители природы, семьи, романтики</li>
+        <li><strong>Цена:</strong> от 3 500 ₽/чел. или 12 000–18 000 ₽ за группу</li>
+      </ul>
+      <img src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_663f7c2b960efa7b0826d5dd_663f7c721d849c75f2948cea/scale_1200" alt="Природа Сибири" width="100%" style="border-radius: 12px;">
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h2>Галерея</h2>
+    <img src="https://avatars.mds.yandex.net/i?id=a5b0593f311fc2cfc70d66913d98252b81e4865a-5241338-images-thumbs&n=13" alt="Фото1">
+    <img src="http://avatars.mds.yandex.net/get-altay/9761215/2a0000018af0968b3b37884060de22e2d802/XXL_height" alt="Фото2">
+    <img src="https://sibgenco.online/upload/resize_cache/iblock/9aa/1300_1300_1/9aa83ab7ebc629e4e0d2533d9098c7ff.jpg" alt="Фото3">
+  </section>
+
+  <section>
+    <h2>Оставить заявку</h2>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Ваше имя" required>
+      <input type="tel" name="phone" placeholder="Телефон" required>
+      <textarea name="message" rows="4" placeholder="Какая экскурсия вас интересует?"></textarea>
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>г. Новосибирск, ул. Ленина, 25</p>
+    <p>NSKTrip.ru | Тел: 8 912 345 67 89</p>
+  </footer>
+</body>
+</html>
